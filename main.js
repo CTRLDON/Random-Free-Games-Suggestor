@@ -13,7 +13,7 @@ function main() {
 }
 
     $.ajax(settings).done(function (response) {
-        // window.open(response['game_url'])
-        window.location.href = response['game_url']
+        var win = window.open(url, "_blank", "noopener");
+        win.focus();
     });
 }
