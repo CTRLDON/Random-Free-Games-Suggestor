@@ -14,5 +14,6 @@ function main() {
 
     $.ajax(settings).done(function (response) {
         // window.open(response['game_url'])
+        window.location.href = response['game_url']
     });
 }
