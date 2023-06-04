@@ -13,7 +13,7 @@ function main() {
 }
 
     $.ajax(settings).done(function (response) {
-        var win = window.open(url, "_blank", "noopener");
+        var win = window.open(response['game_url'], "_blank", "noopener");
         win.focus();
     });
 }
