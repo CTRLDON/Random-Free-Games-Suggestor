@@ -13,6 +13,6 @@ function main() {
 }
 
     $.ajax(settings).done(function (response) {
-        window.open(response['game_url'])
+        // window.open(response['game_url'])
     });
 }
